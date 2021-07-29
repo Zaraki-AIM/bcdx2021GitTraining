@@ -11,6 +11,10 @@ public class ConflictDemo {
 //		boolean isOK = false;
 //=======
 		boolean isOK = true;
+<<<<<<< HEAD
+		//ここにNGワードを弾く処理を書く
+		
+=======
 		System.out.println("惇平いつもありがとう！");
 		System.out.println("じゅんぺいの優しさにいつも救われています！");
 		System.out.println("これからも同居人としてかなり濃いお付き合いになると思いますが、");
@@ -21,6 +25,7 @@ public class ConflictDemo {
 //		String tekitounahensuu = "tekitounamojiretu";
 
 		System.out.println("こちらこそ何卒よろしくお願い申し上げます。(#^^#)");
+>>>>>>> team5
 
 
 		return isOK;

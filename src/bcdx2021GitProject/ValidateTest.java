@@ -6,6 +6,12 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 public class ValidateTest {
+
+	
+	/*
+	 * return true:OKワード,false:NGワード
+	 * */
+
     public static void main(String[] args)
     {
         int validateCount = 0;
@@ -41,6 +47,12 @@ public class ValidateTest {
         if(nickName.equals(null)) isOK=false;
         if(nickName.equals("")) isOK=false;
         if(nickName.length()>15) isOK=false;
+        if(nickName.contains("090")) isOK = false;
+		if(nickName.contains("県")) isOK = false;
+		if(nickName.contains("都")) isOK = false;
+		if(nickName.contains("道")) isOK = false;
+		if(nickName.contains("府")) isOK = false;
+		if(nickName.contains("@")) isOK = false;
         
         String[] dangerouStrings = {"うんこ","ばか","バカ","馬鹿","あほ","死ね","タヒね","SEX","sex","Sex","殺す"};
         for(int i =0; i < dangerouStrings.length; i++) {
@@ -49,5 +61,6 @@ public class ValidateTest {
         
         return isOK;
     }
+
 }
 
