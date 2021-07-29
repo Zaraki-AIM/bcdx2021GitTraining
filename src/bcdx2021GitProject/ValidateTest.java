@@ -41,11 +41,34 @@ public class ValidateTest {
 	 * return true:OKワード,false:NGワード
 	 * */
 	public static boolean checkNickName(String nickName){
-
-		boolean isOK = true;
 		//ここにNGワードを弾く処理を書く
-		String nickName;
-
+		boolean isOK = true;
+		String check=nickName;
+		
+		if (!check.matches("^[0-9]*$")) {
+			isOK=false;
+		}
+		
+		if(check.contains("@"))isOK=false;
+		if(check.contains("県"))isOK=false;
+		if(check.contains("都"))isOK=false;
+		if(check.contains("道"))isOK=false;
+		if(check.contains("府"))isOK=false;
+		if(check.contains("市"))isOK=false;
+		if(check.contains("うんこ"))isOK=false;
+		if(check.contains("ばか"))isOK=false;
+		if(check.contains("バカ"))isOK=false;
+		if(check.contains("馬鹿"))isOK=false;
+		if(check.contains("あほ"))isOK=false;
+		if(check.contains("死"))isOK=false;
+		if(check.contains("タヒ"))isOK=false;
+		if(check.toUpperCase().contains("SEX"))isOK=false;
+		if(check.contains("殺"))isOK=false;
+		int length = check.length();	
+		if(length >= 16 || length==0){
+			isOK = false;
+		}
+		
 		return isOK;
 
 	}
