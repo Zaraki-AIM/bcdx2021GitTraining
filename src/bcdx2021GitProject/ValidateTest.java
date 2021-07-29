@@ -12,6 +12,8 @@ public class ValidateTest {
 	{
 		int validateCount = 0;
 		int totalCount = 0;
+		int tsuboi;
+		int gyoumumodoritakunai;
 		String filename = "src/sample.txt";
 
         try (BufferedReader in = new BufferedReader(new FileReader(new File(filename)))){
