@@ -44,8 +44,9 @@ public class ValidateTest {
 
 		boolean isOK = true;
 		//ここにNGワードを弾く処理を書く
-		System.out.println("hogehogehoge");
-
+		if(nickName.length() >= 16) {
+			isOK = false;
+		}
 
 		return isOK;
 
