@@ -7,9 +7,10 @@ public class ConflictDemo {
 	 * */
 	public static boolean checkNickName(String nickName){
 
-		boolean isOK = true;
+		boolean isOK = false;
 		//ここにNGワードを弾く処理を書く
 		String tekitounahensuu = "tekitounamojiretu";
+		
 
 
 		return isOK;
