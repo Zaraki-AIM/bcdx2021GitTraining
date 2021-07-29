@@ -45,8 +45,41 @@ public class ValidateTest {
 		boolean isOK = true;
 		
 		//ここにNGワードを弾く処理を書く
+		if(nickName.contains("Sex")) {
+			isOK = false;
+		}
 		
-
+		if(nickName.contains("sex")) {
+			isOK = false;
+		}
+		
+		if(nickName.contains("SEX")) {
+			isOK = false;
+		}
+		
+		if(nickName.contains("馬鹿")) {
+			isOK = false;
+		}
+		
+		if(nickName.contains("バカ")) {
+			isOK = false;
+		}
+		
+		if(nickName.contains("ばか")) {
+			isOK = false;
+		}
+		
+		if(nickName.contains("アホ")) {
+			isOK = false;
+		}
+		
+		if(nickName.contains("死ね")) {
+			isOK = false;
+		}
+		
+		if(nickName.contains("タヒね")) {
+			isOK = false;
+		}
 
 		return isOK;
 
