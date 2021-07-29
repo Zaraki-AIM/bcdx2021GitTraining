@@ -13,7 +13,7 @@ public class ConflictDemo {
 		System.out.println("これからも同居人としてかなり濃いお付き合いになると思いますが、");
 		System.out.println("何卒よろしくお願い申し上げます。(#^^#)");
 		//ここにNGワードを弾く処理を書く
-
+		String tekitounahensuu = "tekitounamojiretu";
 
 
 		return isOK;
