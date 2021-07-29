@@ -42,7 +42,8 @@ public class ValidateTest {
 	 * */
 	public static boolean checkNickName(String nickName){
 
-		boolean isNG = false;
+		boolean isOK = true;
+		
 		//ここにNGワードを弾く処理を書く
 		
 
