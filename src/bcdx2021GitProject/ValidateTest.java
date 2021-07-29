@@ -7,6 +7,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class ValidateTest {
+	//コメントほげほげほげほげ
 
 	public static void main(String[] args)
 	{
