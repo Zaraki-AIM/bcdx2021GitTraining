@@ -27,7 +27,7 @@ public class ValidateTest {
             }
 
             //結果表示
-            System.out.println("NGワード：" + validateCount + "/" + totalCount + ":" + validateCount*100/totalCount +"%");
+            System.out.println("matuoワード：" + validateCount + "/" + totalCount + ":" + validateCount*100/totalCount +"%");
             System.out.println("ssssss");
         } catch (FileNotFoundException e){
             e.printStackTrace();
