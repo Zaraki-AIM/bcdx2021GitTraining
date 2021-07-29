@@ -12,8 +12,6 @@ public class ValidateTest {
 	{
 		int validateCount = 0;
 		int totalCount = 0;
-		int tsuboi;
-		int gyoumumodoritakunai;
 		String filename = "src/sample.txt";
 
         try (BufferedReader in = new BufferedReader(new FileReader(new File(filename)))){
@@ -47,6 +45,9 @@ public class ValidateTest {
 		boolean isOK = true;
 		//ここにNGワードを弾く処理を書く
 
+		if (nickName.contains("北海道")) {
+			return false;
+		}
 
 
 		return isOK;
