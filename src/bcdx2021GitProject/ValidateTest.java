@@ -57,7 +57,7 @@ public class ValidateTest {
 			isOK = false;
 		}
 		
-		/*//電話番号
+		/*//電話番号作り途中
 		for(int i=0; i<strArray.length; i++) {
 			char c = strArray[i].toCharArray();
 			if(strArray[i].)
