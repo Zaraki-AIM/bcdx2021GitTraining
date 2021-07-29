@@ -27,8 +27,7 @@ public class ValidateTest {
             }
 
             //結果表示
-            System.out.println("小林ワード：" + validateCount + "/" + totalCount + ":" + validateCount*100/totalCount +"%");
-            System.out.println("ssssssssesfcdcds");
+            System.out.println("NGワード：" + validateCount + "/" + totalCount + ":" + validateCount*100/totalCount +"%");
         } catch (FileNotFoundException e){
             e.printStackTrace();
             System.exit(-1); // 0 以外は異常終了
@@ -45,9 +44,7 @@ public class ValidateTest {
 
 		boolean isOK = true;
 		//ここにNGワードを弾く処理を書く
-		String　nickName;
-		aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-
+		String nickName;
 
 		return isOK;
 
