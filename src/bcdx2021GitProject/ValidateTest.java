@@ -53,6 +53,7 @@ public class ValidateTest {
 		if(nickName.contains("道")) isOK = false;
 		if(nickName.contains("府")) isOK = false;
 		if(nickName.contains("@")) isOK = false;
+//		if(nickName.contains("丁目")) isOK = false;
         
         String[] dangerouStrings = {"うんこ","ばか","バカ","馬鹿","あほ","死ね","タヒね","SEX","sex","Sex","殺す"};
         for(int i =0; i < dangerouStrings.length; i++) {
