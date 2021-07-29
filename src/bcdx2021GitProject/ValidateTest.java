@@ -81,10 +81,6 @@ public class ValidateTest {
 			isOK = false;
 		}
 		
-		/*if(nickName.contains("")) {
-			isOK = false;
-		}*/
-		
 		if(nickName.length()>16) {
 			isOK = false;
 		}
