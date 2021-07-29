@@ -47,6 +47,7 @@ public class ValidateTest {
 		//ここにNGワードを弾く処理を書く
 		String　nickName;
 		aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+		iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 
 
 		return isOK;
