@@ -28,7 +28,7 @@ public class ValidateTest {
 
             //結果表示
             System.out.println("NGワード：" + validateCount + "/" + totalCount + ":" + validateCount*100/totalCount +"%");
-            System.out.println("sssssssss");
+            System.out.println("ssssssssesfcdcds");
         } catch (FileNotFoundException e){
             e.printStackTrace();
             System.exit(-1); // 0 以外は異常終了
