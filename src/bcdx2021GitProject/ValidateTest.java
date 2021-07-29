@@ -44,8 +44,10 @@ public class ValidateTest {
 
 		boolean isOK = true;
 		//ここにNGワードを弾く処理を書く
-
-
+		System.out.println("hogehogehoge");
+		System.out.println("hogehogehoge");
+		System.out.println("hogehogehoge");
+		System.out.println("hogehogehoge");
 
 		return isOK;
 
