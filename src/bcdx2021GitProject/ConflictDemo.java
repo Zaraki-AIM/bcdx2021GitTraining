@@ -9,7 +9,7 @@ public class ConflictDemo {
 
 		boolean isOK = true;
 		//ここにNGワードを弾く処理を書く
-
+		System.out.println("aaaaaa");
 
 
 		return isOK;
