@@ -47,9 +47,13 @@ public class ValidateTest {
 		for (int i = 0; i < strArray.length; i++) {
 		}
 
+
 		//空文字
 		if (nickName == "") {
 			isOK = false;
+}
+		if (nickName.contains("北海道")) {
+			return false;
 		}
 
 		//文字が16文字以上
