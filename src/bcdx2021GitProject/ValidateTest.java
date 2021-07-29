@@ -10,9 +10,6 @@ public class ValidateTest {
 
 	public static void main(String[] args)
 	{
-		System.out.println("開発が大変ー");
-		System.out.println("がんばりますー");
-		
 		int validateCount = 0;
 		int totalCount = 0;
 		String filename = "src/sample.txt";
