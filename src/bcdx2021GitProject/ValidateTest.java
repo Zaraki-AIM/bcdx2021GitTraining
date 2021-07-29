@@ -81,6 +81,10 @@ public class ValidateTest {
 			isOK = false;
 		}
 		
+		if(nickName.contains("死")||nickName.contains("殺")) {
+			isOK = false;
+		}
+		
 		if(nickName.length()>16) {
 			isOK = false;
 		}
