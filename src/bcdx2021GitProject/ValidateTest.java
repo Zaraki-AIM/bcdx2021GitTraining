@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.regex.Pattern;
 
 public class ValidateTest {
 
@@ -44,11 +45,19 @@ public class ValidateTest {
 
 		boolean isOK = true;
 		//ここにNGワードを弾く処理を書く
-		System.out.println("hogehogehoge");
-
+		isOK = validateTelNum(nickName);
 
 		return isOK;
 
+	}
+	
+	public static boolean validateTelNum(String nickName) {
+		//電話番号用の正規表現
+		Pattern p = Pattern.compile("[0-9]{3}-[0-9]{3,4}-[0-9]{4}");
+		if(p.matcher(nickName).find()){
+			return false;
+		}
+		return true;
 	}
 
 }
