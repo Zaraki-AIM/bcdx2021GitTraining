@@ -44,9 +44,7 @@ public class ValidateTest {
 
 		boolean isOK = true;
 		//ここにNGワードを弾く処理を書く
-		System.out.println("：NG!");
-		System.out.println("：NG!");
-		System.out.println("：NG!");
+
 		return isOK;
 
 	}
