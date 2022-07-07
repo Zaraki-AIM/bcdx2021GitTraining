@@ -42,13 +42,27 @@ public class ValidateTest {
 	 * */
 	public static boolean checkNickName(String nickName){
 
-		boolean isOK = true;
-		//ここにNGワードを弾く処理を書く
-		//String nickName;
-		//boolean isOK = false;
+		// Nullまたは空文字の場合はfalseを返す
+		if (nickName == null || "".equals(nickName)) {
+			return false;
+		}
 
+		// 16文字以上の文字列の場合はfalseを返す
+		if (nickName.length() >= 16) {
+			return false;
+		}
 
-		return isOK;
+		// 郵便番号を含む場合はfalseを返す
+		if (nickName.matches("^.*[0-9]{3}-[0-9]{4}.*$")) {
+			return false;
+		}
+
+		// 電話番号を含む場合はfalseを返す
+		if (nickName.matches("^.*[0-9]{3}-[0-9]{4}-[0-9]{4}.*$")) {
+			return false;
+		}
+
+		return true;
 
 	}
 
