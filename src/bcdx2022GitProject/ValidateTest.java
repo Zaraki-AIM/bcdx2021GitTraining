@@ -46,7 +46,16 @@ public class ValidateTest {
 		//ここにNGワードを弾く処理を書く
 		//String nickName;
 		//boolean isOK = false;
-
+		
+		if ("".equals(nickName)) {
+			isOK = false;
+			return isOK;
+		}
+		
+		if (nickName.contains("うんこ")) {
+			isOK = false;
+			return isOK;
+		}
 
 		return isOK;
 
