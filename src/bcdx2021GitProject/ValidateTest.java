@@ -44,6 +44,8 @@ public class ValidateTest {
 
 		boolean isOK = true;
 		//ここにNGワードを弾く処理を書く
+		String matsuo ="aaa";
+	
 
 		return isOK;
 
