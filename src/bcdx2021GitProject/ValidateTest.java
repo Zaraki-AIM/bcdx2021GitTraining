@@ -44,7 +44,9 @@ public class ValidateTest {
 
 		boolean isOK = true;
 		//ここにNGワードを弾く処理を書く
-
+        if(nickName == "ああああああああああああああああああああ") {
+	     isOK = false;
+        }
 
 
 		return isOK;
