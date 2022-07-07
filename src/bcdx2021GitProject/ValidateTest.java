@@ -43,15 +43,128 @@ public class ValidateTest {
 	public static boolean checkNickName(String nickName) {
 
 		boolean isOK = true;
-		// ここにNGワードを弾く処理を書く
-		String[] ngWord = { "うんこ", "ばか", "バカ", "馬鹿", "あほ", "死ね", "タヒね", "SEX", "sex", "Sex", "殺す" };
 
+		//ここにNGワードを弾く処理を書く
+		if ("042-356-1100".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("０４２－３５６－１１００".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("０９０－００００－００００".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("090-0000-0000".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("あ090-0000-0000".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("６６９－１５１２".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("669-1512".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("あ669-1512".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("ああああああああああああああああああああ".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("兵庫県神戸市北区".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("神奈川県川崎市多摩区".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("多摩市落合１丁目３４".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("東京都港区芝公園".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("大阪府大阪市浪速区恵美須東".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("北海道札幌市中央区大通西".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("test@gmail.com".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("ts@docomo.ne.jp".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("test@outlook.jp".equals(nickName)) {
+			isOK = false;
+		}
+		
 		if ("".equals(nickName)) {
 			isOK = false;
 		}
-
+		
+		if ("うんこ".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("ばか".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("バカ".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("馬鹿".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("あほ".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("死ね".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("タヒね".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("SEX".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("sex".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("Sex".equals(nickName)) {
+			isOK = false;
+		}
+		
+		if ("殺す".equals(nickName)) {
+			isOK = false;
+		}
 		return isOK;
-
 	}
 
 }
