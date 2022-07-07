@@ -5,6 +5,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.List;
+
 
 public class ValidateTest {
 
@@ -42,12 +44,11 @@ public class ValidateTest {
 	 * */
 	public static boolean checkNickName(String nickName){
 
-		boolean isOK = true;
-		//ここにNGワードを弾く処理を書く
+		List<String> NG_WORDS = List.of(
+				"@", "うんこ"
+		);
 
-
-
-		return isOK;
+		return !(NG_WORDS.stream().anyMatch(word->nickName.contains(word)));
 
 	}
 
