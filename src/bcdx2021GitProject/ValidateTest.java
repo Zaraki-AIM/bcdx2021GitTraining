@@ -1,4 +1,4 @@
-package bcdx2021GitProject;
+package bcdx2022GitProject;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -42,12 +42,27 @@ public class ValidateTest {
 	 * */
 	public static boolean checkNickName(String nickName){
 
-		boolean isOK = true;
-		//ここにNGワードを弾く処理を書く
+		// Nullまたは空文字の場合はfalseを返す
+		if (nickName == null || "".equals(nickName)) {
+			return false;
+		}
 
+		// 16文字以上の文字列の場合はfalseを返す
+		if (nickName.length() >= 16) {
+			return false;
+		}
 
+		// 郵便番号を含む場合はfalseを返す
+		if (nickName.matches("^.*[0-9]{3}-[0-9]{4}.*$")) {
+			return false;
+		}
 
-		return isOK;
+		// 電話番号を含む場合はfalseを返す
+		if (nickName.matches("^.*[0-9]{3}-[0-9]{4}-[0-9]{4}.*$")) {
+			return false;
+		}
+
+		return true;
 
 	}
 
